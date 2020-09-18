@@ -2,6 +2,7 @@ import React from 'react';
 import Split from './composition/Split';
 import './App.css';
 import Tooltip from './composition/Tooltip';
+import Messages from './Messages';
 
 // make 2 tooltips here and 1 inside the App directly
 const firstTooltip = (
@@ -18,6 +19,9 @@ const secondTooltip = (
 
 function App() {
   return (
+    <div>
+    <Messages name="Messages" unread={0}/>
+      <Messages name="Notifications" unread={10}/>
     <main className='App'>
       <Split className="left" flexBasis={2}>
       This is the content for the left `Split`. Lorem {firstTooltip} dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia? 
@@ -29,6 +33,7 @@ function App() {
         This is the content for the right `Split`. Inventore aliquid cupiditate suscipit repellat. Quaerat quis {secondTooltip} quam fuga. Aliquid quo possimus id soluta aspernatur.
       </Split>
     </main>
+    </div>
   );
 }
 
