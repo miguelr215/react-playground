@@ -3,6 +3,7 @@ import Split from './composition/Split';
 import './App.css';
 import Tooltip from './composition/Tooltip';
 import Messages from './Messages';
+import TheDate from './state/TheDate.js';
 
 // make 2 tooltips here and 1 inside the App directly
 const firstTooltip = (
@@ -20,7 +21,8 @@ const secondTooltip = (
 function App() {
   return (
     <div>
-    <Messages name="Messages" unread={0}/>
+      <TheDate />
+      <Messages name="Messages" unread={0}/>
       <Messages name="Notifications" unread={10}/>
     <main className='App'>
       <Split className="left" flexBasis={2}>
