@@ -4,6 +4,7 @@ import './App.css';
 import Tooltip from './composition/Tooltip';
 import Messages from './Messages';
 import TheDate from './state/TheDate.js';
+import Counter from './state/Counter/Counter.js';
 
 // make 2 tooltips here and 1 inside the App directly
 const firstTooltip = (
@@ -22,6 +23,7 @@ function App() {
   return (
     <div>
       <TheDate />
+      <Counter />
       <Messages name="Messages" unread={0}/>
       <Messages name="Notifications" unread={10}/>
     <main className='App'>
