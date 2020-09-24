@@ -1,10 +1,13 @@
 import React from 'react';
 import Split from './composition/Split';
 import './App.css';
-import Tooltip from './composition/Tooltip';
+import Tooltip from './composition/Tooltip.js';
 import Messages from './Messages';
 import TheDate from './state/TheDate.js';
 import Counter from './state/Counter/Counter.js';
+import HelloWorld from './state-drills/HelloWorld.js';
+import Bomb from './state-drills/Bomb.js';
+import RouletteGun from './state-drills/RouletteGun.js';
 
 // make 2 tooltips here and 1 inside the App directly
 const firstTooltip = (
@@ -23,7 +26,10 @@ function App() {
   return (
     <div>
       <TheDate />
-      <Counter />
+      <HelloWorld />
+      <Counter counter={123}/>
+      <Bomb />
+      <RouletteGun />
       <Messages name="Messages" unread={0}/>
       <Messages name="Notifications" unread={10}/>
     <main className='App'>
