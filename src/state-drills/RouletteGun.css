@@ -1,0 +1,9 @@
+.rouletteBox {
+    border: solid 1px #000000;
+    border-radius: 10px;
+    background-color: rgba(163, 2, 56, 0.685);
+    font-size: 18px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}

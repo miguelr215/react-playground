@@ -14,11 +14,14 @@ class HelloWorld extends React.Component {
     helloReactClick = () => {
         this.setState({who: 'react!'})
     }
+    helloClick = (value) => {
+        this.setState({who: value})
+    }
     render(){
         return (
             <div className='helloBox'>
                 <p>Hello, {this.state.who}</p>
-                <button onClick={this.helloWorldClick}>World</button>
+                <button onClick={() => this.helloClick('world!')}>World</button>
                 <button onClick={this.helloFriendClick}>Friend</button>
                 <button onClick={this.helloReactClick}>React</button>
             </div>

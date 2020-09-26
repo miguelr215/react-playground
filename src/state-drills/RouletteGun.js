@@ -1,4 +1,5 @@
 import React from 'react';
+import './RouletteGun.css';
 
 class RouletteGun extends React.Component {
     state = {
@@ -37,7 +38,7 @@ class RouletteGun extends React.Component {
     }
     render(){
         return(
-            <div>
+            <div className='rouletteBox'>
                 <h3>Roulette Gun</h3>
                 <p>{this.renderDisplay()}</p>
                 <button onClick={this.pullTheTrigger}>Pull the trigger!</button>
