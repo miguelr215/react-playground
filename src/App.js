@@ -8,6 +8,7 @@ import Counter from './state/Counter/Counter.js';
 import HelloWorld from './state-drills/HelloWorld.js';
 import Bomb from './state-drills/Bomb.js';
 import RouletteGun from './state-drills/RouletteGun.js';
+import Tabs from './state/Tabs.js';
 
 // make 2 tooltips here and 1 inside the App directly
 const firstTooltip = (
@@ -22,6 +23,16 @@ const secondTooltip = (
   </Tooltip>
 )
 
+// data for Tabs component - passed as a prop
+const tabsProp = [
+  { name: 'First tab',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
+  { name: 'Second tab',
+    content: 'Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.' },
+  { name: 'Third tab',
+    content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.' },
+];
+
 function App() {
   return (
     <div>
@@ -35,6 +46,7 @@ function App() {
     <main className='App'>
       <Split className="left" flexBasis={2}>
       This is the content for the left `Split`. Lorem {firstTooltip} dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia? 
+      <a href='www.google.com'>learn react</a>
       <Tooltip message='one more tooltip message'>
         Necessitatibus?
       </Tooltip> 
@@ -43,6 +55,9 @@ function App() {
         This is the content for the right `Split`. Inventore aliquid cupiditate suscipit repellat. Quaerat quis {secondTooltip} quam fuga. Aliquid quo possimus id soluta aspernatur.
       </Split>
     </main>
+    <div className='tabsBox'>
+      <Tabs tabs={tabsProp}/>
+    </div>
     </div>
   );
 }
