@@ -28,7 +28,7 @@ class Tabs extends React.Component {
         <div>
             {this.renderButtons()}
             {/* only show content when the tabs array has length */}
-            {this.props.tabs.length && this.renderContent()}
+            {!!this.props.tabs.length && this.renderContent()}
         </div>
         )
     }
