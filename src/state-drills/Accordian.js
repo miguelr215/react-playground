@@ -1,4 +1,5 @@
 import React from 'react';
+import './Accordian.css';
 
 class Accordian extends React.Component {
     static defaultProps = { sections: [] };
