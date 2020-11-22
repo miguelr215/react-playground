@@ -6,7 +6,7 @@ const languageSpecificCopy = {
     },
     'en-US': {
       title: 'Howdy Partner!',
-      body: 'Dolor sit amet consectetur adipisicing elit. Expedita sit. Ea mollitia aperiam tempora hic neque adipisci, iure repudiandae aliquam, culpa nulla officia voluptatem quibusdam, impedit illo autem.'
+      body: 'Expedita sit. Ea mollitia aperiam tempora hic neque adipisci, iure repudiandae aliquam, culpa nulla officia voluptatem quibusdam, impedit illo autem.  Dolor sit amet consectetur adipisicing elit. '
     },
     'ko': {
       title: '폴더 목록',
@@ -15,6 +15,10 @@ const languageSpecificCopy = {
     'spanish': {
         title: 'Hola como estas',
         body: 'oye como va... mi dice... oye como va'
+    },
+    'klingon': {
+      title: 'qaH jaj QaQ!!',
+      body: `amet consectetur adipisicing elit ba'choH dolor.expedita ba'choH. ea mollitia aperiam tempora Here neque adipisci, iure repudiandae aliquam, culpa nulla officia voluptatem quibusdam, impedit illo autem!`
     }
   }
   
